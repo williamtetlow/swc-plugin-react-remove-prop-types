@@ -1,0 +1,20 @@
+{
+  "name": "swc-plugin-react-remove-prop-types",
+  "version": "0.1.0",
+  "description": "swc plugin for removing prop-types, useful for reducing bundle size in production",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "swc-plugin"
+  ],
+  "main": "target/wasm32-wasi/release/swc-plugin-react-remove-prop-types.wasm",
+  "scripts": {
+    "prepublishOnly": "cargo build --release",
+    "example:usage": "npx swc ./examples/fixtures/usage_npm/Component.tsx -o ./examples/out/usage_npm/component.js --config-file ./examples/fixtures/usage_npm/.swcrc"
+  },
+  "files": [],
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.145"
+  }
+}

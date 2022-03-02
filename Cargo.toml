@@ -1,0 +1,20 @@
+[package]
+name = "swc-plugin-react-remove-prop-types"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.55"
+serde = "1"
+serde_json = "1.0.79"
+swc_plugin = "*"
+
+[dev-dependencies]
+js-sys = "0.3.56"
+swc = { version = "0.138.0", features = ["plugin"] }
+swc_common = { version = "0.17.9", features = ["tty-emitter"] }
+swc_ecma_parser = "0.91.11"
+swc_ecma_transforms_testing = "0.65.0"

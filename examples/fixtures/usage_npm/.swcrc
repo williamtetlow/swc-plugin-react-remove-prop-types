@@ -1,0 +1,22 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true
+    },
+    "target": "es5",
+    "transform": {
+      "react": {
+        "runtime": "classic"
+      }
+    },
+    "experimental": {
+      "plugins": [
+        [
+          "/Users/williamtetlow/Documents/GitHub/swc-plugin-react-remove-prop-types/target/wasm32-wasi/debug/swc_plugin_react_remove_prop_types.wasm",
+          "{}"
+        ]
+      ]
+    }
+  }
+}
